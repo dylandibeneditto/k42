@@ -1,0 +1,14 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "f02b5857-308d-42ff-a903-485f1b94b6fe")
+	(paper "A4")
+	(title_block
+		(title "k42 - Left Half")
+		(date "2026-06-16")
+		(rev "1.0.0")
+		(company "Dylan DiBeneditto")
+	)
+	(lib_symbols)
+)
