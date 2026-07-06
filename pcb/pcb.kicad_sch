@@ -6,11 +6,21 @@
 	(paper "A4")
 	(title_block
 		(title "k42 - Root File")
-		(date "2026-06-16")
+		(date "2026-06-24")
 		(rev "1.0.0")
 		(company "Dylan DiBeneditto")
 	)
 	(lib_symbols)
+	(text "both sides are identical\nexcept for GPIO pinouts"
+		(exclude_from_sim no)
+		(at 151.13 163.322 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "32f341b2-b391-4553-b262-1e5ce3944e8b")
+	)
 	(sheet
 		(at 12.7 20.32)
 		(size 135.89 132.08)

@@ -6,9 +6,32 @@
 	(paper "A4")
 	(title_block
 		(title "k42 - Left Half")
-		(date "2026-06-16")
+		(date "2026-06-24")
 		(rev "1.0.0")
 		(company "Dylan DiBeneditto")
 	)
 	(lib_symbols)
+	(text "LEFT HALF\n"
+		(exclude_from_sim no)
+		(at 13.462 15.748 0)
+		(effects
+			(font
+				(face "Helvetica")
+				(size 3.302 3.302)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "17a8499c-cd3c-43d8-b2cd-3e0ffab572cb")
+	)
+	(text "both sides symmetrical!"
+		(exclude_from_sim no)
+		(at 133.604 153.67 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+			)
+		)
+		(uuid "a61346d0-85e0-4806-a50d-d79a977cfb86")
+	)
 )
