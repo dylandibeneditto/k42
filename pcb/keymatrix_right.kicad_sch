@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "e056f455-5f6e-44b6-b3f1-b4e6b091e319")
 	(paper "A4")
 	(title_block
@@ -18,8 +18,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
 				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -28,6 +32,8 @@
 			)
 			(property "Value" "1N4148W"
 				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -36,65 +42,79 @@
 			)
 			(property "Footprint" "Diode_SMD:D_SOD-123"
 				(at 0 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Sim.Device" "D"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Sim.Pins" "1=K 2=A"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "diode"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "D*SOD?123*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "1N4148W_0_1"
@@ -186,8 +206,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
 				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -197,6 +221,8 @@
 			)
 			(property "Value" "SW_Push"
 				(at 0 -1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -205,38 +231,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Push button switch, generic, two pins"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "switch normally-open pushbutton push-button"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "SW_Push_0_1"
@@ -325,6 +359,16 @@
 			)
 			(embedded_fonts no)
 		)
+	)
+	(text "Kailh Hotswap Sockets\ncan be assembled by PCBA.\n42 * $0.04 = $1.68 cost for board\nextended part so there is a loading fee\n"
+		(exclude_from_sim no)
+		(at 231.394 128.778 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0b6e56f3-499d-4813-8a23-8e88855edb3d")
 	)
 	(junction
 		(at 214.63 66.04)
@@ -1472,14 +1516,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 163.83 113.03 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01df0752-be97-49cc-851b-73414bda760f")
 		(property "Reference" "D20"
 			(at 166.37 111.7599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1489,6 +1537,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 166.37 114.2999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1498,54 +1548,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 168.275 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 163.83 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 163.83 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 163.83 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 163.83 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "8613f680-90d4-451d-b8f2-169655d753bd")
+			(uuid "08f41ab4-bd3c-442a-ab20-4e5dc2210712")
 		)
 		(pin "2"
-			(uuid "c2ed3e18-6e34-4c1e-b403-b6f6e79186e3")
+			(uuid "5f0b8118-9708-41f6-9774-8e72cd8aa904")
 		)
 		(instances
 			(project "pcb"
@@ -1560,14 +1620,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 138.43 87.63 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0453516c-8341-4660-8404-5361642182b0")
 		(property "Reference" "D13"
 			(at 140.97 86.3599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1577,6 +1641,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 140.97 88.8999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1586,54 +1652,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 142.875 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 138.43 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 138.43 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 138.43 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 138.43 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "aa546340-037c-42ab-80b3-ad85493c03c7")
+			(uuid "143251ed-544d-44cd-9867-cf87959cd19a")
 		)
 		(pin "2"
-			(uuid "d35e6905-5e1c-4df9-aea5-512f44076f87")
+			(uuid "6bedae1d-8444-4f81-bc71-4182079ec5d9")
 		)
 		(instances
 			(project "pcb"
@@ -1648,14 +1724,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 259.08 82.55 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "11893678-34a1-4fee-b42d-a4791ced7822")
 		(property "Reference" "SW19"
 			(at 259.08 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1664,6 +1744,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 259.08 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1672,36 +1754,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 259.08 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 259.08 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 259.08 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "7060cb1a-c4b7-45f8-95b9-52f06491969b")
+			(uuid "b9daa8be-6228-413c-a9e6-a870d5eeb20f")
 		)
 		(pin "1"
-			(uuid "9bdcd95c-590c-4985-adde-5bd15450f16b")
+			(uuid "d2cbade0-4a6e-4603-9212-902144ef22d1")
 		)
 		(instances
 			(project "pcb"
@@ -1716,14 +1804,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 233.68 82.55 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13428d64-3704-4027-a12e-e119d18f6e94")
 		(property "Reference" "SW18"
 			(at 233.68 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1732,6 +1824,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 233.68 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1740,36 +1834,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 233.68 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 233.68 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 233.68 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "1372f636-5af1-4ee1-84be-8ced8ff8c8ce")
+			(uuid "f109a06f-79c1-4e1c-adc6-f35f5a68c6c1")
 		)
 		(pin "1"
-			(uuid "97ee506a-8926-40d0-9807-e70ea68d1c9a")
+			(uuid "f42e30ed-b125-4b81-9159-a5bfc4186e70")
 		)
 		(instances
 			(project "pcb"
@@ -1784,14 +1884,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 208.28 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d2a5964-6af6-4eee-8e86-6e15d3f4f5d9")
 		(property "Reference" "SW11"
 			(at 208.28 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1800,6 +1904,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 208.28 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1808,36 +1914,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 208.28 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 208.28 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 208.28 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "6fe2ab81-0dbb-4f68-bef1-e37d65c150e6")
+			(uuid "05281796-2a3a-496e-a4c2-64e01e0690b2")
 		)
 		(pin "1"
-			(uuid "dea1c770-2dfc-4e5f-9f9b-fcfaf04e3ed3")
+			(uuid "d0aaf9e7-bc0a-40f7-b180-add79e0bdd6a")
 		)
 		(instances
 			(project "pcb"
@@ -1852,14 +1964,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 182.88 82.55 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1dab92c5-2077-4a2f-9f75-33943bb20c66")
 		(property "Reference" "SW16"
 			(at 182.88 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1868,6 +1984,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 182.88 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1876,36 +1994,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 182.88 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 182.88 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 182.88 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "758c5ee0-77af-49fb-a660-4cf2198bb645")
+			(uuid "37c4d681-2198-4a7f-80ea-58e14a6e17a3")
 		)
 		(pin "1"
-			(uuid "93db5d57-1502-48ee-aba5-141e527d922b")
+			(uuid "7241bc93-e96b-4f7c-ac67-acb41ba6e39d")
 		)
 		(instances
 			(project "pcb"
@@ -1920,14 +2044,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 157.48 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "233c0264-6b64-4dbd-be20-05d6a926bbd5")
 		(property "Reference" "SW9"
 			(at 157.48 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1936,6 +2064,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 157.48 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1944,36 +2074,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 157.48 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 157.48 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 157.48 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "cb1f0d7d-5353-41d3-aa1f-56018bd5c685")
+			(uuid "933accc7-44d6-4555-b352-533eef26334d")
 		)
 		(pin "1"
-			(uuid "732fa41d-aadb-4573-bd23-00331e94be0b")
+			(uuid "4d5bc34c-1ced-47df-b9a4-f86f83f3c1ab")
 		)
 		(instances
 			(project "pcb"
@@ -1988,14 +2124,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 214.63 62.23 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "340b954f-7401-4736-960f-fcad422d8961")
 		(property "Reference" "D10"
 			(at 217.17 60.9599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2005,6 +2145,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 217.17 63.4999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2014,54 +2156,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 219.075 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 214.63 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 214.63 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 214.63 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 214.63 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "fe021bdc-ed4b-40ee-80d7-85c91db95e12")
+			(uuid "5174df70-602a-4aab-a63c-48350485a6ba")
 		)
 		(pin "2"
-			(uuid "cbb75f23-3a41-4df1-ae2b-f11881537799")
+			(uuid "20c805a6-62b9-4732-b41f-88ac291897f8")
 		)
 		(instances
 			(project "pcb"
@@ -2076,14 +2228,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 265.43 62.23 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "363440ec-a13b-47a0-a5eb-b8e702b5a50c")
 		(property "Reference" "D12"
 			(at 267.97 60.9599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2093,6 +2249,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 267.97 63.4999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2102,54 +2260,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 269.875 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 265.43 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 265.43 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 265.43 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 265.43 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "7063b2b5-99e3-4c31-9139-9f9dfa3e8382")
+			(uuid "e0674836-2e8f-4f61-8283-0923dae4190b")
 		)
 		(pin "2"
-			(uuid "492699ff-3e82-40f1-a51b-ffff60b486fc")
+			(uuid "6cbde5d7-9b73-4058-a80f-d4de22b9dd39")
 		)
 		(instances
 			(project "pcb"
@@ -2164,14 +2332,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 138.43 62.23 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "373cf148-6ac6-47d7-a0e7-18f5bd8a8a43")
 		(property "Reference" "D7"
 			(at 140.97 60.9599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2181,6 +2353,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 140.97 63.4999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2190,54 +2364,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 142.875 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 138.43 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 138.43 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 138.43 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 138.43 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "d7793596-580c-43e2-994a-8a2468ae9bd2")
+			(uuid "3495039d-8837-45b1-8183-8f6a3692d541")
 		)
 		(pin "2"
-			(uuid "1cc0cca6-cde7-47ee-8911-a1bfa1cafb6c")
+			(uuid "e8679826-4e22-45bb-9808-8637b6256866")
 		)
 		(instances
 			(project "pcb"
@@ -2252,14 +2436,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 157.48 107.95 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c02fed0-e62e-4fc5-a932-dd46b3c471c3")
 		(property "Reference" "SW21"
 			(at 157.48 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2268,6 +2456,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 157.48 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2276,36 +2466,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 157.48 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 157.48 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 157.48 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "34a69ddf-45b0-4b27-a992-bd28f623d117")
+			(uuid "193880db-ed33-4da6-a229-d6c908ad265d")
 		)
 		(pin "1"
-			(uuid "e8c4472b-0703-4b1d-a4d7-4853b2526048")
+			(uuid "7428b00e-39dc-4cbd-89e1-f5d12e728f52")
 		)
 		(instances
 			(project "pcb"
@@ -2320,14 +2516,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 259.08 31.75 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46b671db-3247-4ed9-943a-13a9fd9c202d")
 		(property "Reference" "SW7"
 			(at 259.08 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2336,6 +2536,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 259.08 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2344,36 +2546,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 259.08 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 259.08 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 259.08 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "2e4b8b1f-8d27-4e20-9302-555596a2bc31")
+			(uuid "7333116c-1029-49bc-991d-356a5f028901")
 		)
 		(pin "1"
-			(uuid "337a7104-d92d-4b6a-9973-34a39e603137")
+			(uuid "ac88497a-13f4-41f6-bc3d-863e8a253fc5")
 		)
 		(instances
 			(project "pcb"
@@ -2388,14 +2596,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 259.08 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "472fdc1f-3213-4df8-82d9-c99bdc5774b7")
 		(property "Reference" "SW13"
 			(at 259.08 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2404,6 +2616,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 259.08 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2412,36 +2626,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 259.08 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 259.08 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 259.08 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "9986b84a-0183-4339-b0a1-1816662ac8e3")
+			(uuid "49f92447-e7a8-4ef6-90d5-fb13538b7628")
 		)
 		(pin "1"
-			(uuid "edee64ec-f5b3-43ee-90c8-7118a203dc32")
+			(uuid "a42e86e3-dfbf-4385-b568-97558ffce696")
 		)
 		(instances
 			(project "pcb"
@@ -2456,14 +2676,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 189.23 113.03 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5739da2d-545c-4161-a296-5baafc8ccece")
 		(property "Reference" "D21"
 			(at 191.77 111.7599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2473,6 +2697,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 191.77 114.2999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2482,54 +2708,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 193.675 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 189.23 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 189.23 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 189.23 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 189.23 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "e4242248-f3ca-42e2-9727-463a50d4a5b0")
+			(uuid "1f7c0a37-097e-4740-9413-7fea35c70eac")
 		)
 		(pin "2"
-			(uuid "d54208f8-6857-49b8-9a8b-60ba7f3ce7cf")
+			(uuid "6c87b14d-45b0-4d0e-9d3e-43a4bff00cd7")
 		)
 		(instances
 			(project "pcb"
@@ -2544,14 +2780,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 233.68 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60925ca8-6f37-480f-b27d-38740489c39e")
 		(property "Reference" "SW12"
 			(at 233.68 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2560,6 +2800,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 233.68 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2568,36 +2810,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 233.68 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 233.68 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 233.68 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "2a817c49-5700-45ed-9717-cb5f0a580fbe")
+			(uuid "f2ab76e9-76f2-4b04-a507-00eb7532a699")
 		)
 		(pin "1"
-			(uuid "0f8abb86-b10e-4516-a13b-a0da1f465331")
+			(uuid "896f921f-cc80-4921-bdd0-bf0a667b0746")
 		)
 		(instances
 			(project "pcb"
@@ -2612,14 +2860,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 182.88 31.75 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "62052fb6-d001-465e-8799-18fddfa9edca")
 		(property "Reference" "SW4"
 			(at 182.88 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2628,6 +2880,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 182.88 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2636,36 +2890,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 182.88 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 182.88 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 182.88 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "43b25f4c-369f-4077-918c-8df67dd663c0")
+			(uuid "da27bca1-109a-40d6-82de-efc18de900c9")
 		)
 		(pin "1"
-			(uuid "1375b3e6-622a-45c1-8e80-c25606794a14")
+			(uuid "56e995cd-d82c-4fc6-9289-2c0f4ae4f6c7")
 		)
 		(instances
 			(project "pcb"
@@ -2680,14 +2940,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 163.83 36.83 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63bdf51d-038e-4733-95c7-e55df60d42d6")
 		(property "Reference" "D2"
 			(at 166.37 35.5599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2697,6 +2961,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 166.37 38.0999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2706,54 +2972,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 168.275 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 163.83 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 163.83 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 163.83 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 163.83 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "1cb8ad82-8161-4e13-b6a1-238067a6f0bd")
+			(uuid "bb76dc62-b12f-4ce4-b5f8-d3a087281331")
 		)
 		(pin "2"
-			(uuid "24ea5c5d-0575-4305-8632-7cfe9382a21d")
+			(uuid "6fbd8fe7-2a61-4454-88d6-ca06f99c50c3")
 		)
 		(instances
 			(project "pcb"
@@ -2768,14 +3044,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 208.28 82.55 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "642c491b-699d-421e-9ccb-c9e66260d808")
 		(property "Reference" "SW17"
 			(at 208.28 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2784,6 +3064,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 208.28 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2792,36 +3074,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 208.28 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 208.28 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 208.28 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "2d9a81ad-2bd7-463a-8626-40334815b0c6")
+			(uuid "cfa05954-76b5-43ab-8b36-f813fca775d7")
 		)
 		(pin "1"
-			(uuid "56a097d6-376e-4396-9d76-3907e398a2e1")
+			(uuid "6bcb5f2d-3202-49d2-8bd3-d93cfd4a05e8")
 		)
 		(instances
 			(project "pcb"
@@ -2836,14 +3124,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 240.03 62.23 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "690f72b9-ba7c-4057-bd9c-c45122715920")
 		(property "Reference" "D11"
 			(at 242.57 60.9599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2853,6 +3145,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 242.57 63.4999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2862,54 +3156,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 244.475 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 240.03 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 240.03 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 240.03 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 240.03 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "b49150b7-89a5-4c7e-89eb-a5e8591bdd5b")
+			(uuid "dd9893c2-f34d-4f39-b5b2-495bbd5ac86e")
 		)
 		(pin "2"
-			(uuid "12a04893-d6c1-4d4c-9e3c-5f9b744a67b8")
+			(uuid "51d00f86-d613-4adb-8cf5-1ebc9b0b3422")
 		)
 		(instances
 			(project "pcb"
@@ -2924,14 +3228,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 182.88 107.95 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6947b440-c1cb-4bde-82dc-d682109ac005")
 		(property "Reference" "SW22"
 			(at 182.88 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2940,6 +3248,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 182.88 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2948,36 +3258,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 182.88 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 182.88 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 182.88 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "f07aa1ff-a4e0-4919-9b68-ec37830364ad")
+			(uuid "52ef2fb6-c092-4e23-81cd-035bdff6a5d4")
 		)
 		(pin "1"
-			(uuid "a888d7f7-7b5d-4535-86e4-cd671af594dd")
+			(uuid "f33add7b-8e59-4068-b06b-ab03e20607da")
 		)
 		(instances
 			(project "pcb"
@@ -2992,14 +3308,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 132.08 107.95 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "70be4501-42cc-48c1-8792-e046eadff87d")
 		(property "Reference" "SW20"
 			(at 132.08 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3008,6 +3328,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 132.08 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3016,36 +3338,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 132.08 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 132.08 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 132.08 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "51a96c80-25ac-408a-bfe8-27a21ef70032")
+			(uuid "b24d800f-cbc0-41c0-8fc8-f8e1730fe50f")
 		)
 		(pin "1"
-			(uuid "45ddde44-b07e-4260-ba92-068711d9e534")
+			(uuid "1ad115b3-a2b4-4fbb-a07f-342e68ea647b")
 		)
 		(instances
 			(project "pcb"
@@ -3060,14 +3388,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 265.43 87.63 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c0e89b3-f151-4aa2-99f9-bf39107a68b1")
 		(property "Reference" "D18"
 			(at 267.97 86.3599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3077,6 +3409,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 267.97 88.8999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3086,54 +3420,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 269.875 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 265.43 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 265.43 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 265.43 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 265.43 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "4d279654-0314-4b79-a410-f3aac40f42d5")
+			(uuid "81870e82-e8d5-4dc0-8d32-e5e056a10416")
 		)
 		(pin "2"
-			(uuid "d56ddfbf-67f3-4110-bd90-7af5d59df0f2")
+			(uuid "ef041e2d-6124-41db-9125-994bda4881d0")
 		)
 		(instances
 			(project "pcb"
@@ -3148,14 +3492,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 189.23 87.63 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8291c7e1-ba25-424d-b150-dab3d7ed4761")
 		(property "Reference" "D15"
 			(at 191.77 86.3599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3165,6 +3513,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 191.77 88.8999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3174,54 +3524,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 193.675 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 189.23 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 189.23 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 189.23 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 189.23 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "f47871dd-0e8e-49e2-9c14-7b191883b21f")
+			(uuid "b45777c9-c68f-4dce-84e5-6ea80483c488")
 		)
 		(pin "2"
-			(uuid "b38b6a47-61ed-4738-8cfb-60f5fb74f689")
+			(uuid "c5482c92-6698-49d6-9a4b-da7ba6c4805a")
 		)
 		(instances
 			(project "pcb"
@@ -3236,14 +3596,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 265.43 36.83 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84502b35-8ff5-4e3c-8adf-119663d2fb65")
 		(property "Reference" "D6"
 			(at 267.97 35.5599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3253,6 +3617,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 267.97 38.0999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3262,54 +3628,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 269.875 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 265.43 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 265.43 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 265.43 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 265.43 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "7ad3663c-1f03-4c57-a5cf-b367aa973c3e")
+			(uuid "78831ebf-c546-4a63-a195-2f0b5bdfb1fb")
 		)
 		(pin "2"
-			(uuid "f099555a-7ee8-4e91-9beb-c91494dc23c6")
+			(uuid "55554fe5-7f07-4d46-8ffb-147813dfd3c1")
 		)
 		(instances
 			(project "pcb"
@@ -3324,14 +3700,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 138.43 36.83 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9503219f-d8ee-4a8a-960c-c52fb6e53c6e")
 		(property "Reference" "D1"
 			(at 140.97 35.5599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3341,6 +3721,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 140.97 38.0999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3350,54 +3732,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 142.875 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 138.43 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 138.43 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 138.43 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 138.43 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "393bfff8-fb98-4e88-abc3-86caa30d229b")
+			(uuid "e53d5473-c2ab-43a9-bb35-4eceecc198b8")
 		)
 		(pin "2"
-			(uuid "f8c72e05-0a4a-456c-8868-ced8b7b1a71d")
+			(uuid "b63a21a2-4031-4626-8136-bbfeb8b4d742")
 		)
 		(instances
 			(project "pcb"
@@ -3412,14 +3804,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 189.23 36.83 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a5aecd3-8d4b-4523-9fdf-053df56961f3")
 		(property "Reference" "D3"
 			(at 191.77 35.5599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3429,6 +3825,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 191.77 38.0999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3438,54 +3836,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 193.675 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 189.23 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 189.23 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 189.23 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 189.23 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "9b346ce2-0752-44ec-9a3d-4f518ddfcc61")
+			(uuid "7715d10d-07b5-4766-9f01-c39c09978509")
 		)
 		(pin "2"
-			(uuid "0daecc5c-dd8b-441c-852e-66f110df4bba")
+			(uuid "5bb7bc90-5acd-41de-aefd-182f40b333a4")
 		)
 		(instances
 			(project "pcb"
@@ -3500,14 +3908,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 132.08 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d275d27-3703-4e26-841c-b9e2e9fe54f6")
 		(property "Reference" "SW8"
 			(at 132.08 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3516,6 +3928,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 132.08 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3524,36 +3938,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 132.08 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 132.08 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 132.08 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "f9979220-484a-4c53-84f2-d426e82d6f3e")
+			(uuid "24a15946-5d37-4476-bcfd-d17ac9a66175")
 		)
 		(pin "1"
-			(uuid "f673ede2-59ea-4c75-be29-7221437fa03d")
+			(uuid "33f1fffc-1e34-4f5d-8668-3e4c3f608381")
 		)
 		(instances
 			(project "pcb"
@@ -3568,14 +3988,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 157.48 31.75 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ed89b32-1590-4ed7-968a-511dbc060199")
 		(property "Reference" "SW3"
 			(at 157.48 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3584,6 +4008,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 157.48 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3592,36 +4018,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 157.48 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 157.48 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 157.48 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "2aedb5ea-79eb-46a1-bd79-4a70158624d0")
+			(uuid "7e34cf8e-af87-440f-a233-b7ef26fdce3f")
 		)
 		(pin "1"
-			(uuid "a5f9711e-51d7-4e82-b7b7-15835331551b")
+			(uuid "fd26102d-3931-463c-8fdc-366b713ce29b")
 		)
 		(instances
 			(project "pcb"
@@ -3636,14 +4068,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 132.08 31.75 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b05a20ad-467d-4fe9-9de8-f4da4d1926b2")
 		(property "Reference" "SW2"
 			(at 132.08 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3652,6 +4088,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 132.08 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3660,36 +4098,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 132.08 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 132.08 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 132.08 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "1006407a-03e6-426d-b808-180abb55651e")
+			(uuid "e9559cb6-fa5c-48ca-b4b9-81c9c4a21fcb")
 		)
 		(pin "1"
-			(uuid "289cdd21-eb54-48f1-ac9a-1eb80f369c67")
+			(uuid "f4c1b117-6d23-48ca-bfe5-37f0068e8807")
 		)
 		(instances
 			(project "pcb"
@@ -3704,14 +4148,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 240.03 87.63 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc56e487-48d7-4525-a688-060db9968b25")
 		(property "Reference" "D17"
 			(at 242.57 86.3599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3721,6 +4169,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 242.57 88.8999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3730,54 +4180,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 244.475 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 240.03 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 240.03 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 240.03 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 240.03 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "e20f32b7-0944-4369-9819-50ed826c4e34")
+			(uuid "5bd6c6f3-903c-495b-9551-fb793f63c140")
 		)
 		(pin "2"
-			(uuid "72c23551-c0c0-46c7-bf83-c9fcbab750f7")
+			(uuid "e8327963-cb2b-48c6-aa3b-cb8249dfbcd0")
 		)
 		(instances
 			(project "pcb"
@@ -3792,14 +4252,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 132.08 82.55 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bd7e6454-6c0c-49fb-a107-61a020a39616")
 		(property "Reference" "SW14"
 			(at 132.08 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3808,6 +4272,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 132.08 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3816,36 +4282,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 132.08 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 132.08 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 132.08 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "bfee8129-3c1b-4525-9439-eaec209fe2a3")
+			(uuid "9d83d689-124a-4558-8233-278be9a64522")
 		)
 		(pin "1"
-			(uuid "28631d27-35e9-4239-8fbf-73d7b42a6c2a")
+			(uuid "961d1349-37a8-45d6-acc3-c85584871c12")
 		)
 		(instances
 			(project "pcb"
@@ -3860,14 +4332,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 157.48 82.55 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c406edbc-1bd6-4a10-8cc8-761b2a8d35d1")
 		(property "Reference" "SW15"
 			(at 157.48 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3876,6 +4352,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 157.48 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3884,36 +4362,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 157.48 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 157.48 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 157.48 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "6a9a852b-164e-4848-a991-e775c01dacc5")
+			(uuid "4262c64b-3efa-4402-b1e3-5839ec78d5e8")
 		)
 		(pin "1"
-			(uuid "54b9f1f9-8cc9-4d36-aae5-70e7063d1812")
+			(uuid "a0ba6715-5ecb-48c9-90b4-53ae3a1b4dc1")
 		)
 		(instances
 			(project "pcb"
@@ -3928,14 +4412,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 182.88 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4a72ba9-be98-442e-9960-ed3404628036")
 		(property "Reference" "SW10"
 			(at 182.88 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3944,6 +4432,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 182.88 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3952,36 +4442,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 182.88 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 182.88 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 182.88 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "bf2b928f-a01e-41f5-828f-6b86160b7aa8")
+			(uuid "7c49ef39-0265-459f-a915-964f7a0484a5")
 		)
 		(pin "1"
-			(uuid "cdb8068a-bb0c-445b-ae65-1641b65c5c87")
+			(uuid "f5f4346f-4f0c-4ab2-930f-fff376aa5a09")
 		)
 		(instances
 			(project "pcb"
@@ -3996,14 +4492,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 233.68 31.75 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cfb72ee8-f2cd-4592-aacc-f4c4aa7c8896")
 		(property "Reference" "SW6"
 			(at 233.68 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4012,6 +4512,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 233.68 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4020,36 +4522,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 233.68 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 233.68 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 233.68 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "ac9894ab-0b3e-4fc8-ab85-ddaf204a0a36")
+			(uuid "10a699dc-dc4c-4c9d-a12c-2141b3cefec3")
 		)
 		(pin "1"
-			(uuid "1646ed4e-0dab-4ad4-8dd7-e3868e3a7309")
+			(uuid "7482fe17-cbc3-423e-ad0b-c8019f87bc95")
 		)
 		(instances
 			(project "pcb"
@@ -4064,14 +4572,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 163.83 62.23 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d265b88b-0af4-4e08-9e8b-65d49ae39458")
 		(property "Reference" "D8"
 			(at 166.37 60.9599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4081,6 +4593,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 166.37 63.4999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4090,54 +4604,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 168.275 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 163.83 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 163.83 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 163.83 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 163.83 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "46f4df58-35e9-4b9f-976d-3f8f4f4a18d9")
+			(uuid "163c2912-ce7f-42ae-99c6-7dbb24e508eb")
 		)
 		(pin "2"
-			(uuid "d3c5c913-4ac4-4b88-86c1-a919cec68fc3")
+			(uuid "eb6c7696-39bb-48d4-8a61-0a54d9232442")
 		)
 		(instances
 			(project "pcb"
@@ -4152,14 +4676,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 214.63 87.63 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df46478c-7b98-4eaf-8846-22df5becabe7")
 		(property "Reference" "D16"
 			(at 217.17 86.3599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4169,6 +4697,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 217.17 88.8999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4178,54 +4708,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 219.075 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 214.63 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 214.63 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 214.63 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 214.63 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "8d8ce206-9fa0-47db-a834-295f178dd8b5")
+			(uuid "c99ee9db-6acd-47c2-8812-7f00662d9ea9")
 		)
 		(pin "2"
-			(uuid "18cb1888-2bf2-40b7-a55a-76c4bf6bf54e")
+			(uuid "f4dca430-aee9-428e-8665-b3f777ed9295")
 		)
 		(instances
 			(project "pcb"
@@ -4240,14 +4780,18 @@
 		(lib_id "Switch:SW_Push")
 		(at 208.28 31.75 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e2ccea08-b89e-474e-bb87-a82beed336dc")
 		(property "Reference" "SW5"
 			(at 208.28 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4256,6 +4800,8 @@
 		)
 		(property "Value" "SW_Push"
 			(at 208.28 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4264,36 +4810,42 @@
 		)
 		(property "Footprint" "kbd:keyswitch_choc12_hotswap_1u"
 			(at 208.28 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 208.28 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 208.28 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "c124220a-d1e4-4bcf-8cd4-f2bec48291f5")
+			(uuid "293e8322-a40a-4e3b-b6a9-4baecf495aea")
 		)
 		(pin "1"
-			(uuid "05f7b4d6-b053-40c7-adec-57b66dad789b")
+			(uuid "5ee2d573-4fcb-4c59-a71d-9e0d30bac76d")
 		)
 		(instances
 			(project "pcb"
@@ -4308,14 +4860,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 163.83 87.63 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e893051e-c1e6-40c0-8c40-dbe78603f11d")
 		(property "Reference" "D14"
 			(at 166.37 86.3599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4325,6 +4881,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 166.37 88.8999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4334,54 +4892,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 168.275 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 163.83 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 163.83 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 163.83 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 163.83 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "e2e0efa9-b172-48d7-a6fd-f65bb543a771")
+			(uuid "09113bc2-722c-4e8b-9013-13a8fc079c5d")
 		)
 		(pin "2"
-			(uuid "3bd2d723-98d4-4f27-b105-eeadf1fd6e52")
+			(uuid "cc8cbcc8-729c-4c64-b212-d1f614a5ecd8")
 		)
 		(instances
 			(project "pcb"
@@ -4396,14 +4964,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 214.63 36.83 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8f2521f-2bc1-4488-8681-2730a5c68411")
 		(property "Reference" "D4"
 			(at 217.17 35.5599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4413,6 +4985,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 217.17 38.0999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4422,54 +4996,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 219.075 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 214.63 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 214.63 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 214.63 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 214.63 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "dc2996b9-9f8a-4ade-adba-9a8368b4fc8a")
+			(uuid "e309bd22-b2d8-446e-9c3f-a67645029478")
 		)
 		(pin "2"
-			(uuid "8eb11ee7-c040-40bc-8833-e159ee863aeb")
+			(uuid "d1e45f3e-1a57-4b7d-a0bf-9837938b07df")
 		)
 		(instances
 			(project "pcb"
@@ -4484,14 +5068,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 240.03 36.83 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f0f4e4a1-8b6b-45d4-80f9-99c1dcb89b4e")
 		(property "Reference" "D5"
 			(at 242.57 35.5599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4501,6 +5089,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 242.57 38.0999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4510,54 +5100,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 244.475 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 240.03 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 240.03 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 240.03 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 240.03 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "d56144c3-5bc1-4dfb-865a-6c7afca9c4b9")
+			(uuid "908042ea-5674-4b7d-8001-088d79884796")
 		)
 		(pin "2"
-			(uuid "f4a80450-2ea0-4507-94a7-3d1ce48e06c4")
+			(uuid "743fc27d-879c-4563-8217-eec21d344439")
 		)
 		(instances
 			(project "pcb"
@@ -4572,14 +5172,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 189.23 62.23 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8f645ee-e3ac-4b42-bc10-11ec95e60db4")
 		(property "Reference" "D9"
 			(at 191.77 60.9599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4589,6 +5193,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 191.77 63.4999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4598,54 +5204,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 193.675 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 189.23 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 189.23 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 189.23 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 189.23 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "8357a013-5b66-40fc-92bd-590d0090c07e")
+			(uuid "067de5d9-d777-486d-a917-543f1a4bac4c")
 		)
 		(pin "2"
-			(uuid "5bd2f56f-b770-43f1-919e-e7f9ad46e4b8")
+			(uuid "43a9e8a6-6b70-4eb7-9128-d089267921f3")
 		)
 		(instances
 			(project "pcb"
@@ -4660,14 +5276,18 @@
 		(lib_id "Diode:1N4148W")
 		(at 138.43 113.03 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f93421f6-09e2-4683-88d0-18003dd12b77")
 		(property "Reference" "D19"
 			(at 140.97 111.7599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4677,6 +5297,8 @@
 		)
 		(property "Value" "1N4148W"
 			(at 140.97 114.2999 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4686,54 +5308,64 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 142.875 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 138.43 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 138.43 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 138.43 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 138.43 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "63336973-7782-4e08-92ad-6a89a842c1c7")
+			(uuid "7b3d4142-c6e4-460d-8d24-dfe90e70758c")
 		)
 		(pin "2"
-			(uuid "fa4f8ae4-7650-4485-8b2f-c67679f877d3")
+			(uuid "866a4230-f419-467e-aa8b-7af353272b14")
 		)
 		(instances
 			(project "pcb"

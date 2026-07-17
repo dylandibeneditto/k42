@@ -2,3 +2,6 @@
 (rule "BGA Tighter Clearance"
   (constraint clearance (min 0.1mm))
   (condition "A.insideCourtyard('U1')"))
+(rule "BGA Tighter Clearance"
+  (constraint clearance (min 0.1mm))
+  (condition "A.insideCourtyard('U7')"))

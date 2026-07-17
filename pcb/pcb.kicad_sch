@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "79b359b8-94d1-439d-a17f-41f5d59081a6")
 	(paper "A4")
 	(title_block
@@ -34,11 +34,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "83d54310-893d-4ec8-a645-59ec34bec7d9")
 		(property "Sheetname" "Left"
 			(at 12.7 18.5924 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 3.302 3.302)
@@ -50,6 +52,8 @@
 		)
 		(property "Sheetfile" "left.kicad_sch"
 			(at 12.7 152.9846 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -78,11 +82,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "b2c8f017-14f5-4783-8c1b-fe907bb97694")
 		(property "Sheetname" "Right"
 			(at 149.86 18.5924 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 3.302 3.302)
@@ -94,6 +100,8 @@
 		)
 		(property "Sheetfile" "right.kicad_sch"
 			(at 149.86 152.9846 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
