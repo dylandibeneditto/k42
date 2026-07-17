@@ -60,10 +60,10 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.0,
+          "min_clearance": 0.5,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
-          "pad_connection": 1,
+          "min_thickness": 0.5,
+          "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
@@ -220,6 +220,7 @@
         0.3,
         0.34,
         0.5,
+        0.7,
         0.79
       ],
       "tuning_pattern_settings": {
@@ -535,6 +536,22 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "GND",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.2,
+        "name": "RF",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -546,6 +563,26 @@
       {
         "netclass": "Default",
         "pattern": "VBAT_SENSE"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "Net-(U7-ANT)"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "Net-(AE2-A)"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "Net-(U1-ANT)"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "Net-(AE1-A)"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "GND"
       }
     ]
   },
@@ -743,7 +780,7 @@
         "uuid": "79b359b8-94d1-439d-a17f-41f5d59081a6"
       }
     ],
-    "used_designators": "AE2,L4,L6-8,L10,D22-42,BT2,#PWR7-10,#PWR13,#PWR19-21,#PWR23,#PWR32-33,#PWR36-38,#PWR40,#PWR44-45,#PWR89,#PWR137-156,C27-52,H6-10,J6-10,Q3-4,R12-22,SW25-48,TH2,TP2,U5-8,Y3-4",
+    "used_designators": "#PWR7-10,#PWR13,#PWR19-21,#PWR23,#PWR32-33,#PWR36-38,#PWR40,#PWR44-45,#PWR89,#PWR137-156,BT2,D22-42,AE2,L4,L6-8,L10,C27-52,H6-10,J6-10,Q3-4,R12-22,SW25-48,TH2,TP2,U5-8,Y3-4",
     "variants": []
   },
   "sheets": [

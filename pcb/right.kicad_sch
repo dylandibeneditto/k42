@@ -5605,16 +5605,6 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 73.66) (xy 34.29 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1760dedc-1ce0-40fb-9dee-03cdc0540811")
-	)
-	(wire
-		(pts
 			(xy 142.24 59.69) (xy 142.24 58.42)
 		)
 		(stroke
@@ -6265,7 +6255,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 73.66) (xy 26.67 73.66)
+			(xy 24.13 73.66) (xy 34.29 73.66)
 		)
 		(stroke
 			(width 0)
@@ -11074,7 +11064,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.2p"
+		(property "Value" "0.5pF"
 			(at 36.83 80.0162 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13386,86 +13376,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L_Small")
-		(at 29.21 73.66 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bc2bcca4-4069-4df0-bcac-56977bfcb5aa")
-		(property "Reference" "L9"
-			(at 29.21 68.58 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.2nH"
-			(at 29.21 71.12 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
-			(at 29.21 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 29.21 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Inductor, small symbol"
-			(at 29.21 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "11829848-a1e3-47f9-8ede-d3dc6678f264")
-		)
-		(pin "2"
-			(uuid "89355aa4-a75a-4dd8-872d-fb753dec6c9c")
-		)
-		(instances
-			(project "pcb"
-				(path "/79b359b8-94d1-439d-a17f-41f5d59081a6/b2c8f017-14f5-4783-8c1b-fe907bb97694"
-					(reference "L9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 19.05 83.82 0)
 		(unit 1)
@@ -13571,7 +13481,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1p"
+		(property "Value" "0.8pF"
 			(at 46.99 80.0162 0)
 			(show_name no)
 			(do_not_autoplace no)

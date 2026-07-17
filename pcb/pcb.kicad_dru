@@ -5,3 +5,8 @@
 (rule "BGA Tighter Clearance"
   (constraint clearance (min 0.1mm))
   (condition "A.insideCourtyard('U7')"))
+
+(rule "CPWG Clearance"
+(condition "A.NetClass == 'RF' && B.NetClass == 'GND'")
+(constraint clearance (min 0.5mm))
+)
