@@ -60,11 +60,11 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.25,
+          "min_clearance": 0.5,
           "min_island_area": 10.0,
-          "min_thickness": 0.2,
+          "min_thickness": 0.25,
           "pad_connection": 1,
-          "remove_islands": 1,
+          "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
@@ -210,9 +210,7 @@
         }
       ],
       "track_widths": [
-        0.0,
-        0.18,
-        0.3
+        0.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -549,7 +547,7 @@
     "annotate_start_num": 0,
     "annotation": {
       "method": 0,
-      "sort_order": 0
+      "sort_order": 1
     },
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
@@ -659,17 +657,17 @@
     "top_level_sheets": [
       {
         "filename": "pcb.kicad_sch",
-        "name": "pcb",
+        "name": "Root",
         "uuid": "4974a44c-5b72-4a74-85f2-186f07a4cc6d"
       }
     ],
-    "used_designators": "J1",
+    "used_designators": "R1-2,J1-2,U1-3,SW1-24,SW49-69,JP1-18,D1-21,D43-63,#PWR1-20,C1,H1-7",
     "variants": []
   },
   "sheets": [
     [
       "4974a44c-5b72-4a74-85f2-186f07a4cc6d",
-      "pcb"
+      "Root"
     ]
   ],
   "text_variables": {},
