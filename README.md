@@ -13,3 +13,7 @@
 - Planning on a **DIY kit** for $150
 
 > **One prototype for me cost ~$250**, so buying the kit saves a significant amount
+
+![Layout](.github/PCB_Layout)
+
+![3D](.github/PCB_3D)
