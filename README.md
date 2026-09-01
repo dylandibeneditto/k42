@@ -14,6 +14,6 @@
 
 > **One prototype for me cost ~$250**, so buying the kit saves a significant amount
 
-![Layout](.github/PCB_Layout.png)
+![Layout](.github/PCB_layout.png)
 
 ![3D](.github/PCB_3D.png)
